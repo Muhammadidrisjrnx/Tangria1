@@ -89,8 +89,6 @@ public class Question extends AppCompatActivity {
                     questions a = new questions();
                     a.setId(Hasiljson.getJSONObject(i).getInt("id_question"));
                     a.setPertanyaan(Hasiljson.getJSONObject(i).getString("pertanyaan"));
-                    Log.e("question", "onPostExecute: " + Hasiljson.getJSONObject(i).getInt("id_question") );
-                    Log.e("question", "onPostExecute: " + Hasiljson.getJSONObject(i).getString("pertanyaan"));
                     questionsArrayList.add(a);
                 }
                 initFragment(questionsArrayList);
